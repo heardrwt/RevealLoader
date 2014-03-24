@@ -1,0 +1,9 @@
+Package: com.rheard.reveal-loader
+Name: Reveal Loader
+Version: 1.0.0
+Architecture: iphoneos-arm
+Depends: mobilesubstrate, preferenceloader, applist
+Maintainer: Richard Heard 
+Author: Richard Heard
+Section: Tweaks
+Description: RevealLoader dynamically loads libReveal.dylib (Reveal.app support) into iOS apps on jailbroken devices. Configuration is via the Reveal menu in Settings.app

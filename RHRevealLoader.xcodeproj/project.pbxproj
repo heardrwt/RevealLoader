@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13FC3DF918DC2E6400BA7BD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FC3DF818DC2E6400BA7BD5 /* Foundation.framework */; };
+		13FC3E0418DC2ECF00BA7BD5 /* RHDownloadReveal.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FC3DF018DC2C3500BA7BD5 /* RHDownloadReveal.m */; };
+		13FC3E1118DC302000BA7BD5 /* partial.c in Sources */ = {isa = PBXBuildFile; fileRef = 13FC3E0E18DC302000BA7BD5 /* partial.c */; };
+		13FC3E1418DC318E00BA7BD5 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FC3E1318DC318E00BA7BD5 /* libcurl.dylib */; };
+		13FC3E1618DC31A400BA7BD5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FC3E1518DC31A400BA7BD5 /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13FC3DF318DC2E6400BA7BD5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13FC3DE818DC238E00BA7BD5 /* RHRevealLoader.l.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = RHRevealLoader.l.mm; sourceTree = "<group>"; };
+		13FC3DEB18DC23A800BA7BD5 /* RHRevealLoader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = RHRevealLoader.plist; sourceTree = "<group>"; };
+		13FC3DEF18DC245200BA7BD5 /* RHRevealLoader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = RHRevealLoader.plist; path = layout/Library/PreferenceLoader/Preferences/RHRevealLoader.plist; sourceTree = "<group>"; };
+		13FC3DF018DC2C3500BA7BD5 /* RHDownloadReveal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHDownloadReveal.m; sourceTree = "<group>"; };
+		13FC3DF518DC2E6400BA7BD5 /* RHDownloadReveal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RHDownloadReveal; sourceTree = BUILT_PRODUCTS_DIR; };
+		13FC3DF818DC2E6400BA7BD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		13FC3E0B18DC302000BA7BD5 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		13FC3E0D18DC302000BA7BD5 /* partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partial.h; sourceTree = "<group>"; };
+		13FC3E0E18DC302000BA7BD5 /* partial.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = partial.c; sourceTree = "<group>"; };
+		13FC3E1318DC318E00BA7BD5 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		13FC3E1518DC31A400BA7BD5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13FC3DF218DC2E6400BA7BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FC3E1618DC31A400BA7BD5 /* libz.dylib in Frameworks */,
+				13FC3E1418DC318E00BA7BD5 /* libcurl.dylib in Frameworks */,
+				13FC3DF918DC2E6400BA7BD5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13E4B23A18DC1F3D00543170 = {
+			isa = PBXGroup;
+			children = (
+				13FC3DED18DC243200BA7BD5 /* Sources */,
+				13FC3DEC18DC23B000BA7BD5 /* Loading Filters */,
+				13FC3DEE18DC243900BA7BD5 /* Preferences */,
+				13FC3E0818DC302000BA7BD5 /* partialzip */,
+				13FC3DF718DC2E6400BA7BD5 /* Frameworks */,
+				13FC3DF618DC2E6400BA7BD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13FC3DEC18DC23B000BA7BD5 /* Loading Filters */ = {
+			isa = PBXGroup;
+			children = (
+				13FC3DEB18DC23A800BA7BD5 /* RHRevealLoader.plist */,
+			);
+			name = "Loading Filters";
+			sourceTree = "<group>";
+		};
+		13FC3DED18DC243200BA7BD5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				13FC3DE818DC238E00BA7BD5 /* RHRevealLoader.l.mm */,
+				13FC3DF018DC2C3500BA7BD5 /* RHDownloadReveal.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		13FC3DEE18DC243900BA7BD5 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				13FC3DEF18DC245200BA7BD5 /* RHRevealLoader.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		13FC3DF618DC2E6400BA7BD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13FC3DF518DC2E6400BA7BD5 /* RHDownloadReveal */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13FC3DF718DC2E6400BA7BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13FC3E1518DC31A400BA7BD5 /* libz.dylib */,
+				13FC3E1318DC318E00BA7BD5 /* libcurl.dylib */,
+				13FC3DF818DC2E6400BA7BD5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13FC3E0818DC302000BA7BD5 /* partialzip */ = {
+			isa = PBXGroup;
+			children = (
+				13FC3E0A18DC302000BA7BD5 /* include */,
+				13FC3E0E18DC302000BA7BD5 /* partial.c */,
+			);
+			path = partialzip;
+			sourceTree = "<group>";
+		};
+		13FC3E0A18DC302000BA7BD5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				13FC3E0B18DC302000BA7BD5 /* common.h */,
+				13FC3E0C18DC302000BA7BD5 /* partial */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		13FC3E0C18DC302000BA7BD5 /* partial */ = {
+			isa = PBXGroup;
+			children = (
+				13FC3E0D18DC302000BA7BD5 /* partial.h */,
+			);
+			path = partial;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		13E4B23F18DC1F3D00543170 /* RHRevealLoader */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "";
+			buildConfigurationList = 13E4B24218DC1F3D00543170 /* Build configuration list for PBXLegacyTarget "RHRevealLoader" */;
+			buildPhases = (
+			);
+			buildToolPath = "$(PROJECT_DIR)/deploy.sh";
+			buildWorkingDirectory = "$(PROJECT_DIR)";
+			dependencies = (
+			);
+			name = RHRevealLoader;
+			passBuildSettingsInEnvironment = 1;
+			productName = RHRevealLoader;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		13FC3DF418DC2E6400BA7BD5 /* RHDownloadReveal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13FC3E0118DC2E6400BA7BD5 /* Build configuration list for PBXNativeTarget "RHDownloadReveal" */;
+			buildPhases = (
+				13FC3DF118DC2E6400BA7BD5 /* Sources */,
+				13FC3DF218DC2E6400BA7BD5 /* Frameworks */,
+				13FC3DF318DC2E6400BA7BD5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RHDownloadReveal;
+			productName = RHDownloadReveal;
+			productReference = 13FC3DF518DC2E6400BA7BD5 /* RHDownloadReveal */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13E4B23B18DC1F3D00543170 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Richard Heard";
+			};
+			buildConfigurationList = 13E4B23E18DC1F3D00543170 /* Build configuration list for PBXProject "RHRevealLoader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13E4B23A18DC1F3D00543170;
+			productRefGroup = 13FC3DF618DC2E6400BA7BD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13E4B23F18DC1F3D00543170 /* RHRevealLoader */,
+				13FC3DF418DC2E6400BA7BD5 /* RHDownloadReveal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13FC3DF118DC2E6400BA7BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13FC3E0418DC2ECF00BA7BD5 /* RHDownloadReveal.m in Sources */,
+				13FC3E1118DC302000BA7BD5 /* partial.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13E4B24018DC1F3D00543170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode5.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(PROJECT_DIR)/partialzip/include\"/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		13E4B24118DC1F3D00543170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode5.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(PROJECT_DIR)/partialzip/include\"/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		13E4B24318DC1F3D00543170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SSH_ASKPASS = ./alpine;
+			};
+			name = Debug;
+		};
+		13E4B24418DC1F3D00543170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SSH_ASKPASS = ./alpine;
+			};
+			name = Release;
+		};
+		13FC3E0218DC2E6400BA7BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		13FC3E0318DC2E6400BA7BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13E4B23E18DC1F3D00543170 /* Build configuration list for PBXProject "RHRevealLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13E4B24018DC1F3D00543170 /* Debug */,
+				13E4B24118DC1F3D00543170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13E4B24218DC1F3D00543170 /* Build configuration list for PBXLegacyTarget "RHRevealLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13E4B24318DC1F3D00543170 /* Debug */,
+				13E4B24418DC1F3D00543170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13FC3E0118DC2E6400BA7BD5 /* Build configuration list for PBXNativeTarget "RHDownloadReveal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FC3E0218DC2E6400BA7BD5 /* Debug */,
+				13FC3E0318DC2E6400BA7BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13E4B23B18DC1F3D00543170 /* Project object */;
+}
