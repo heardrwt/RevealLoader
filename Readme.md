@@ -11,7 +11,11 @@ For more info see [revealapp.com](http://revealapp.com)
 ## How to Install
 See [here](http://www.ijailbreak.com/cydia/how-to-add-a-cydia-repository/) for how to add a Repository to Cydia.
 
-The URL for the repo is `https://raw.githubusercontent.com/heardrwt/RevealLoader/master/releases/repo/`
+Cydia > Sources Tab > Edit > Add > Enter the below URL
+
+The URL for the repo is `http://github.com/heardrwt/RevealLoader/raw/master/releases/`
+
+Finally, search for Reveal Loader on the Packages Tab and select install. 
 
 ## Be Social
 Follow me on [Twitter](https://twitter.com/intent/follow?screen_name=heardrwt)! (@heardrwt)
