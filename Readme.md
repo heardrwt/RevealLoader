@@ -11,11 +11,18 @@ For more info see [revealapp.com](http://revealapp.com)
 ## How to Install
 See [here](http://www.ijailbreak.com/cydia/how-to-add-a-cydia-repository/) for how to add a Repository to Cydia.
 
-Cydia > Sources Tab > Edit > Add > Enter the below URL
+Navigate to 'Cydia > Sources Tab > Edit > Add' and enter the below source URL.
 
-The URL for the repo is `http://github.com/heardrwt/RevealLoader/raw/master/releases/`
+`http://rheard.com/cydia`
 
 Finally, search for Reveal Loader on the Packages Tab and select install. 
 
+## How to Use
+Open 'Settings > Reveal > Enabled Applications' and toggle the application or applications that you want to debug to on.
+
+Launch the target application and it should appear inside Reveal.app on your Mac. 
+
+(You will likely need to quit and relaunch the target application)
+
 ## Be Social
-Follow me on [Twitter](https://twitter.com/intent/follow?screen_name=heardrwt)! (@heardrwt)
+Follow me on [Twitter](https://twitter.com/intent/follow?screen_name=heardrwt) (@heardrwt)

@@ -6,4 +6,4 @@ Depends: mobilesubstrate, preferenceloader, applist
 Maintainer: Richard Heard 
 Author: Richard Heard
 Section: Tweaks
-Description: RevealLoader dynamically loads libReveal.dylib (Reveal.app support) into iOS apps on jailbroken devices. Configuration is via the Reveal menu in Settings.app
+Description: RevealLoader dynamically loads libReveal.dylib (Reveal.app support) into iOS apps on jailbroken devices. Configuration is via the Reveal menu in Settings.app For more info see http://github.com/heardrwt/RevealLoader and http://revealapp.com

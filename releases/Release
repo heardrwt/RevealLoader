@@ -1,8 +1,8 @@
-Origin: Reveal Loader Repo
-Label: Reveal Loader Repo
+Origin: rheard.com/cydia
+Label: rheard.com/cydia
 Suite: stable
 Version: 1.0
-Codename: reveal-loader
+Codename: rheard-com-cydia
 Architectures: iphoneos-arm
 Components: main
-Description: Reveal Loader Repo
+Description: rheard.com/cydia
