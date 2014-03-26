@@ -9,6 +9,9 @@ For more info see [revealapp.com](http://revealapp.com)
 
 
 ## How to Install
+Reveal Loader is available directly inside Cydia. Just search for the "Reveal Loader" development package.
+
+## How to Install - Custom
 See [here](http://www.ijailbreak.com/cydia/how-to-add-a-cydia-repository/) for how to add a Repository to Cydia.
 
 Navigate to 'Cydia > Sources Tab > Edit > Add' and enter the below source URL.
