@@ -29,6 +29,7 @@ struct partialFile {
     unsigned char *pos;
     size_t fileSize;
     size_t downloadedBytes;
+    float lastPercentageLogged;
 };
 
 
@@ -38,7 +39,13 @@ size_t data_callback(ZipInfo* info, CDFile* file, unsigned char *buffer, size_t 
 	pfile->pos += size;
     pfile->downloadedBytes += size;
     
-    printf("Downloaded %zu/%zu bytes. %g%% complete.\n", pfile->downloadedBytes, pfile->fileSize, ((float)pfile->downloadedBytes/(float)pfile->fileSize) * 100.f);
+    float newPercentage = (int)(((float)pfile->downloadedBytes/(float)pfile->fileSize) * 100.f);
+    if (newPercentage > pfile->lastPercentageLogged){
+        if ((int)newPercentage % 5 == 0 || pfile->lastPercentageLogged == 0.0f){
+            printf("Downloading.. %g%%\n", newPercentage);
+            pfile->lastPercentageLogged = newPercentage;
+        }
+    }
     
     return size;
 }
@@ -53,7 +60,8 @@ int main(int argc, const char *argv[], const char *envp[]){
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:libraryPath]) {
         //download libReveal.dylib
-        
+        printf("Downloading '%s /%s' to '%s'.\n", [downloadURL UTF8String], [zipPath UTF8String], [libraryPath UTF8String]);
+
         
         ZipInfo* info = PartialZipInit([downloadURL UTF8String]);
         if(!info) {

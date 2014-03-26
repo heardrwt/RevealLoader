@@ -115,7 +115,8 @@
 				13FC3E0A18DC302000BA7BD5 /* include */,
 				13FC3E0E18DC302000BA7BD5 /* partial.c */,
 			);
-			path = partialzip;
+			name = partialzip;
+			path = "third-party/partialzip";
 			sourceTree = "<group>";
 		};
 		13FC3E0A18DC302000BA7BD5 /* include */ = {
@@ -144,7 +145,7 @@
 			buildConfigurationList = 13E4B24218DC1F3D00543170 /* Build configuration list for PBXLegacyTarget "RHRevealLoader" */;
 			buildPhases = (
 			);
-			buildToolPath = "$(PROJECT_DIR)/deploy.sh";
+			buildToolPath = "$(PROJECT_DIR)/build.sh";
 			buildWorkingDirectory = "$(PROJECT_DIR)";
 			dependencies = (
 			);
@@ -248,7 +249,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode5.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"$(PROJECT_DIR)/partialzip/include\"/**",
+					"\"$(PROJECT_DIR)/third-party/partialzip/include\"/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
@@ -286,7 +287,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode5.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"$(PROJECT_DIR)/partialzip/include\"/**",
+					"\"$(PROJECT_DIR)/third-party/partialzip/include\"/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
